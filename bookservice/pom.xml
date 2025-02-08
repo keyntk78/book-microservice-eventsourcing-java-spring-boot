@@ -82,6 +82,11 @@
 			<version>33.4.0-jre</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.ntk</groupId>
+			<artifactId>commonservice</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 
 	</dependencies>
