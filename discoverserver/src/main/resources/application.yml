@@ -1,0 +1,13 @@
+server:
+  port: 8761  # C?ng m?c ??nh c?a Eureka Server
+
+spring:
+  application:
+    name: discoverserver
+
+eureka:
+  instance:
+    hostname: localhost  # ??a ch? c?a Eureka Server
+  client:
+    register-with-eureka: false  # Không t? ??ng ký chính nó
+    fetch-registry: false        # Không l?y danh sách service t? registry

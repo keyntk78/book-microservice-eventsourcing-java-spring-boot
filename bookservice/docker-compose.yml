@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  axonserver:
+    image: axoniq/axonserver:latest
+    container_name: axon-server
+    ports:
+      - "8024:8024"
+      - "8124:8124"
+    volumes:
+      - axonserver-data:/data
+      - axonserver-events:/eventdata
+      - axonserver-config:/config
+    environment:
+      - AXONIQ_AXONSERVER_DEVMODE=true
+
+volumes:
+  axonserver-data:
+  axonserver-events:
+  axonserver-config:
